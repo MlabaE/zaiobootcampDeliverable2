@@ -1,0 +1,227 @@
+* {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("img/img2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-color: white;
+
+}
+
+.container{
+    background: white;
+    margin: 100px 150px;
+    padding: 25px;
+}
+
+div{
+    background: white;
+}
+
+h1{
+    background: white;
+    font-size: 40pt !important;
+    text-align: center;
+}
+
+span{
+    background: white;
+    font-size: 35pt !important;
+}
+ /*star rating checked*/
+
+ .checked {
+    color: orange;
+}
+
+label{
+    background: white;
+    color:grey;
+    font-size: 15pt;
+}
+
+#rating{
+ display: inline;
+}
+
+#reviews{
+ display: inline;
+}
+
+#finalprice , #orignalprice , #percentoff{
+    padding: 20px;
+    display:inline;
+}
+
+#finalprice{
+    font-size: 20pt;
+}
+
+#colorheading , #selectedcolor{
+    display:inline;
+}
+
+.dot {
+    height: 35px;
+    width: 35px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    
+}
+
+span.dot:hover{
+    height: 50px ;
+    width: 50px ;
+}
+
+
+img{
+    background: white;
+}
+
+a{
+    background: white;
+    color:black;
+    font-size: 15pt;
+}
+
+a:link {
+color: black;
+}
+
+a:visited {
+color: black;
+}
+
+
+#btn1 , #btn2 , #btn3{
+    display: inline-block !important;
+}
+
+/* button */
+
+#Btn1{
+    background-color: white !important;
+    background: white; 
+    border-radius: 250px;
+    border-width: 1px;
+    border-color: black;
+    width: 50px;
+    height: 50px;
+    font-size: 14pt;
+    text-align: center;
+    padding-left: 9px;
+}
+
+     /*cart button*/
+
+     #cartBtn{
+        background-color: black !important;
+        color: white;
+        border-radius: 250px;
+        border-width: 1px;
+        border-color: black;
+        width: 300px;
+        height: 50px;
+        background: white; 
+        font-size: 14pt;
+    }
+
+   hr{
+       border: 1px solid black !important;
+       background: white;
+    }
+
+#plusBtn , #number , #minusBtn , #slctdclr{
+    display: inline;
+    background: white;
+}
+
+#plusBtn{
+    padding-right: 10px;
+}
+
+#sclr{
+    font-size: 15pt;
+    padding-right: 20px;
+    padding-left: 30px;
+}
+
+#num{
+    background: white;
+    height: 40px;
+    width: 70px;
+    font-size: 25pt;
+    border: none;
+    color: rgb(20, 5, 5);
+    font-weight: bold;
+}
+
+#checkoutBtn{
+    display: none;
+    background-color: black !important;
+    color: white;
+    border-radius: 250px;
+    border-width: 1px;
+    border-color: black;
+    width: 300px;
+    height: 50px;
+    background: white; 
+    font-size: 14pt;
+}
+
+#details{
+    display: inline;
+}
+
+p{
+    background: white;
+    font-size: 15pt;
+}
+
+#cartTotal{
+    color: rgb(250, 34, 34);
+    font-size: 30pt;
+    height: 50px;
+    width: 150px;
+    background: white;
+    border: none;
+    cursor: default;
+    float: right;
+}
+
+/* remove icons from the input boxes */
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* cart summary table  */
+
+
+  thead,  td, th {
+      border: 0;
+      color: #666;
+      font-size: 0.8rem;
+    }
+
+
+td, th {
+    vertical-align: middle;
+    text-align: center;
+    background: white;
+    font-size: 10pt;
+}
+
+h5{
+    background: white;
+
+}

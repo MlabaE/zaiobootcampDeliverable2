@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hickies Originals</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">  
+<link data-require="bootstrap@*" data-semver="4.0.0-alpha.2" rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css" />
+</head>
+<body>
+    
+    <div class="container"><!--container to display content of page-->
+        <div class="row align-items-center"><!--align all content in center -->
+            <div class="col">
+                <h1>HICKIES ORIGINALS</h1><!--hickies header-->
+            </div>
+        </div>
+        <div class="row align-items-center"><!--align all content in center -->
+            <div class="col">
+            <div id="rating"><!--star rating dispalying 3 checked stars-->
+                <br><br>
+                <span class="fa fa-star checked" style="font-size: 200%;"></span><!--checked star color orange-->
+                <span class="fa fa-star checked" style="font-size: 200%;"></span><!--checked star color orange-->
+                <span class="fa fa-star checked" style="font-size: 200%;"></span><!--checked star color orange-->
+                <span class="fa fa-star" style="font-size: 200%;"></span><!--unchecked star color black-->
+                <span class="fa fa-star" style="font-size: 200%;"></span><!--unchecked star color black-->
+            </div><!--end of star rating div-->
+            <div id="reviews"><label id="ratings"> 1,293 reviews</label></div><!--display reviews-->
+        </div>
+        </div>
+        <div class="row align-items-center"><!--align all content in center -->
+            <div class="col">
+            <div id="finalprice"><label style="color: rgb(250, 34, 34); font-size: 300%;">$</label><input type="number" value="14.99" id="total" style="color: rgb(250, 34, 34); font-size: 300%;width:300px;background: white;border: none; cursor: default;" onfocus="this.blur()" readonly ></input></div><!--display price in red --> 
+            <div id="orignalprice"><label>$</label><input type="number" value="17.99" id="ogprice" style="cursor: default;background: white;width: 100px;height: 100px;border: none;font-size: 15pt;color:grey;"onfocus="this.blur()" readonly></input></div><!--display original price-->
+            <div id="percentoff"><label>25% OFF</label></div><!--display percentage off-->
+        </div>
+    </div>
+    <div class="row align-items-center"><!--align all content in center -->
+        <div class="col">
+            <div><label style="font-size: 20pt;">ONLINE EXCLUSIVE</label></div>
+        </div> 
+    </div>
+    <div class="row align-items-center"><!--align all content in center -->
+        <div class="col">
+            <div id="colorheading"><label  style="font-size: 25pt; color: black; padding-right: 20px;">COLOR:</label></div>
+            <div id="selectedcolor"><label id="clr" style="font-size: 25pt; color: gray; padding-right: 5px;">select</label></div><!--label that changes when each color is selected-->
+        </div> 
+    </div>
+    <div class="row align-items-center"><!--align all content in center -->
+        <div class="col">
+            <div id="clr-row-1">
+                <span class="dot" id="chartreuse" style="background-color: chartreuse;" onclick="chartreuse()"></span>
+                <span class="dot" id="coral" style="background-color: coral;" onclick="coral()"></span>
+                <span class="dot" id="cyan" style="background-color: cyan;" onclick="cyan()"></span>
+                <span class="dot" id="deeppink" style="background-color: deeppink;" onclick="deeppink()"></span>
+                <span class="dot" id="orange" style="background-color: orange;" onclick="orange()"></span>
+                <span class="dot" id="red" style="background-color: red;" onclick="red()"></span>
+                <span class="dot" id="yellow" style="background-color: yellow;" onclick="yellow()"></span>
+                <span class="dot" id="black" style="background-color: black;" onclick="black()"></span>
+                <span class="dot" id="blueviolet" style="background-color: blueviolet;" onclick="blueviolet()"></span>
+                <span class="dot" id="chocolate" style="background-color: chocolate;" onclick="chocolate()"></span>
+            </div>
+            <div id="clr-row-2">
+                <span class="dot" id="blue" style="background-color: blue" onclick="blue()"></span>
+                <span class="dot" id="green" style="background-color: green;" onclick="green()"></span>
+                <span class="dot" id="grey" style="background-color: grey;" onclick="grey()"></span>
+                <span class="dot" id="maroon" style="background-color: maroon;" onclick="maroon()"></span>
+                <span class="dot"  id="plum"style="background-color: plum;" onclick="plum()"></span>
+                <span class="dot" id="darkorange" style="background-color: darkorange;" onclick="darkorange()"></span>
+            </div>
+        </div>
+        <div class="col">
+            <div id="image">
+                <img id="ice-cream" src="img/blank.png" alt="ice cream" height="400px" width="200px"><!--display ice cream cone image-->
+            </div>
+        </div>
+    </div>
+    <div class="row align-items-center"><!--align all content in center -->
+        <div class="col">
+            <div>
+                <a href="#">Size Guide</a><br>
+                <a href="#">Your Custom Fit</a><br><br><br>
+            </div>
+        </div>
+    </div>
+    <div class="row align-items-center"><!--align all content in center -->
+        <div class="col">
+            <div id="btn1">
+                <!-- <button type="button" id="Btn1">0</button> -->
+                <input type="number" id="Btn1" value="0">
+            </div><!--end of button1 div-->
+            <div id="btn2">
+                <button type="button"  class="btn btn-primary" data-toggle="modal" data-target="#cartModal" id="cartBtn" onclick="lblchange()">Add To Cart</button><!--display add to cart button-->
+<!-- add to cart modal -->         
+<div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cartModalLongTitle" style="background: white; font-size: 20pt;">Add To Cart:<br><small style="background: white; color: black;">please enter the quantityof the color you have selected</small></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div>
+                <div id="slctdclr"><label id="sclr">selected color</label></div>
+                <div id="plusBtn"><button id="up" onclick=" up('10')" style="background: white;border: none;"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span></button></div>
+                <div id="number"><input type="number" id="num" min="1" max="10" value="1" ></div>
+                <div id="minusBtn"><button id="down" onclick=" down('0')" style="background: white;border: none;"><span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span></button></div>
+            </div> 
+        </div>
+        <div class="modal-footer">        
+          <button type="button" class="btn btn-success" id="agree" onclick="functionAgree()" data-dismiss="modal" style="height: 30px; width: 80px; font-size: 10pt">Agree</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal" style="height: 30px; width: 80px; font-size: 10pt">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!--end of button2 div-->
+  <div id="btn3" >
+      <!-- hidden checkout button  -->
+    <button type="button"  class="btn btn-primary" data-toggle="modal" data-target="#checkoutModal" id="checkoutBtn">Checkout</button><!--display checkout button-->
+<!-- checkout modal --> 
+<div class="modal fade" id="checkoutModal" tabindex="-1" role="dialog" aria-labelledby="checkoutModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="checkoutModalLongTitle" style="background: white; font-size: 20pt;">Shopping Cart:</h5>
+    
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="col modal-body">
+          <table class="table table-image">
+            <thead>
+              <tr>
+                <th scope="col">Color</th>
+                <th scope="col">Price</th>
+                <th scope="col">Qty</th>
+                <th scope="col">Total</th>
+                <th scope="col">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="cartSummary">
+              
+            </tbody>
+          </table>
+        </div>
+        <div class="d-flex justify-content-end">
+          <input type="number" id="cartTotal" value="14.99" onfocus="this.blur()" readonly></input>
+        </div>
+        <div class="modal-footer">        
+          <button type="button" class="btn btn-success" id="refresh" onclick="refreshPage()" style="height: 30px; width: 80px; font-size: 10pt">Purchase</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal" style="height: 30px; width: 80px; font-size: 10pt">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div><!--end of checkout button div-->
+</div><!--end of col-->
+</div><!--end of row-->
+    <div class="row align-items-center"><!--align all content in center -->
+        <div class="col">
+            <div>
+                <br>
+                <hr class="ruler">
+                <br>
+            </div>
+        </div>
+    </div>
+    <div class="row align-items-center"><!--align all content in center -->
+        <div class="col">
+            <div style="background: white;">
+                <p>Details</p>
+                <p id="details"></p>
+            </div>
+        </div>
+    </div>
+    <div class="row align-items-center"><!--align all content in center -->
+        <div class="col">
+            <div>
+                <br>
+                <hr class="ruler">
+                <br>
+            </div>
+        </div>
+    </div>
+    <div class="row align-items-center"><!--align all content in center -->
+        <div class="col">
+            <div>
+                <a data-toggle="modal" href="#needHelpModal" id="needHelpLink">Need Help?</a><br>
+
+                  <!-- need help modal -->
+            
+<div class="modal fade" id="needHelpModal" tabindex="-1" role="dialog" aria-labelledby="needHelpModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="needHelpModalLongTitle" style="background: white; font-size: 20pt;">Need Help?</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p style="background: white;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur non autem corporis qui harum officia quidem, tempora aut enim dolor corrupti hic, distinctio veniam commodi dignissimos at veritatis quisquam repellendus.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" style="height: 30px; width: 80px; font-size: 10pt">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+                <a href="#">Shipping & Returns</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>//code to show modals when buttons are clicked
+  //display add to cart modal
+    $(document).ready(function(){
+      $("#cartBtn").click(function(){
+        $("#cartModal").modal();
+      });
+    });
+
+  //display need help modal
+    $(document).ready(function(){
+      $("#needHelpLink").click(function(){
+        $("#needHelpModal").modal();
+      });
+    });
+
+    //display checkout modal
+    $(document).ready(function() {  
+     $('#checkoutModal').modal('show');
+   });
+
+    </script>
+<script src="checkout.js"></script>
+<script src="quantitiyPlusMinusBtns.js"></script>
+<script src="index.js"></script>
+<script src="agreeBtn.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.js"  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="  crossorigin="anonymous"></script>
+<script data-require="jquery@1.9.1" data-semver="1.9.1" src="https://code.jquery.com/jquery-1.9.1.js"></script>
+<script data-require="bootstrap@*" data-semver="4.0.0-alpha.2" src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+</body>
+</html>
